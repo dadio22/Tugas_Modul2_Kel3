@@ -1,3 +1,4 @@
+import React from "react";
 export default function Produk(props) {
   const { data, title } = props;
   return (

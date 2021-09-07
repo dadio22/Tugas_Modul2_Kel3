@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Produk from "./components/Produk/produk";
+import VIP from "./components/VIP/vip";
+import Foto from "./Assets/kaos.jpg"
 
 const data = [
   {
@@ -36,9 +38,17 @@ const data = [
   },
 ];
 
+const vip = [
+  {
+    nama: "Golden Summer Vintage T-Shirt",
+    harga: "$1999999",
+  }
+];
+
 ReactDOM.render(
   <React.StrictMode>
-    <Produk title="TOKO KELOMPOK 3" data={data} />
+    <Produk title="Toko Kelompok 3" data={data} />
+    <VIP foto={Foto} data={vip} deskripsi="Ini adalah kaos termahal sejagad rayaa!!" />
   </React.StrictMode>,
   document.getElementById("root")
 );
