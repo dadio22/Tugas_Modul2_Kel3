@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Produk from "./components/produk";
+import Produk from "./components/Produk/produk";
 
 const data = [
   {
