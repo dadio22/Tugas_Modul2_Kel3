@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Produk from "./components/Produk/produk";
-import VIP from "./components/VIP/vip";
+import VIP from "./components/Button/button";
 import Foto from "./Assets/kaos.jpg"
 
 const data = [
@@ -38,17 +38,47 @@ const data = [
   },
 ];
 
-const vip = [
+const tombol = [
   {
-    nama: "Golden Summer Vintage T-Shirt",
-    harga: "$1999999",
-  }
+    nama: "Order Black Tee",
+    size: "S/M/L/XL",
+  },
+  {
+    nama: "Order White Tee",
+    size: "M/L/XL",
+  },
+  {
+    nama: "Order Red Tee",
+    size: "S/M/L/XL/XXL",
+  },
+  {
+    nama: "Order Green Tee",
+    size: "S/M/L",
+  },
+];
+
+const size = [
+  {
+    small: "S: 18 x 29 inches"
+  },
+  {
+    medium: "M: 20 x 30 inches"
+  },
+  {
+    large: "L: 22 x 31 inches"
+  },
+  {
+    xlarge: "XL: 24 x 32 inches"
+  },
+  {
+    xxlarge: "XXL: 26 x 33 inches"
+  },
 ];
 
 ReactDOM.render(
   <React.StrictMode>
     <Produk title="Toko Kelompok 3" data={data} />
-    <VIP foto={Foto} data={vip} deskripsi="Ini adalah kaos termahal sejagad rayaa!!" />
+    <VIP tombol={tombol} size={size} close="Happy Choosing!" />
   </React.StrictMode>,
   document.getElementById("root")
 );
