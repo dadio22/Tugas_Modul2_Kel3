@@ -5,7 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Produk from "./components/Produk/produk";
 import VIP from "./components/Button/button";
-import Foto from "./Assets/kaos.jpg"
 
 const data = [
   {
