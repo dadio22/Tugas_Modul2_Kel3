@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Produk from "./components/Produk/produk";
 import VIP from "./components/Button/button";
+import Logo from "./assets/coollogo.png";
 
 const data = [
   {
@@ -58,25 +59,25 @@ const tombol = [
 
 const size = [
   {
-    small: "S: 18 x 29 inches"
+    small: "S: 18 x 29 inches",
   },
   {
-    medium: "M: 20 x 30 inches"
+    medium: "M: 20 x 30 inches",
   },
   {
-    large: "L: 22 x 31 inches"
+    large: "L: 22 x 31 inches",
   },
   {
-    xlarge: "XL: 24 x 32 inches"
+    xlarge: "XL: 24 x 32 inches",
   },
   {
-    xxlarge: "XXL: 26 x 33 inches"
+    xxlarge: "XXL: 26 x 33 inches",
   },
 ];
 
 ReactDOM.render(
   <React.StrictMode>
-    <Produk title="Toko Kelompok 3" data={data} />
+    <Produk title="Toko Kelompok 3" data={data} logo={Logo} />
     <VIP tombol={tombol} size={size} close="Happy Choosing!" />
   </React.StrictMode>,
   document.getElementById("root")
