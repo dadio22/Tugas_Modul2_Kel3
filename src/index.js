@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Produk from "./components/Produk/produk";
-import VIP from "./components/Button/button";
+import Button from "./components/Button/button";
 import Logo from "./assets/coollogo.png";
 
 const data = [
@@ -78,7 +78,7 @@ const size = [
 ReactDOM.render(
   <React.StrictMode>
     <Produk title="Toko Kelompok 3" data={data} logo={Logo} />
-    <VIP tombol={tombol} size={size} close="Happy Choosing!" />
+    <Button tombol={tombol} size={size} close="Happy Choosing!" />
   </React.StrictMode>,
   document.getElementById("root")
 );

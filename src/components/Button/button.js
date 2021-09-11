@@ -1,5 +1,5 @@
 import React from "react";
-export default function VIP(props) {
+export default function Button(props) {
 	const { tombol, close, size } = props;
 	return(
     <div className="bg-white">
